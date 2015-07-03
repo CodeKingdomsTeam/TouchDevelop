@@ -32,7 +32,15 @@ module TDev {
         origin: origin,
         path: path + "ace/editor.html"
         icon: ""
-      }, */ {
+      }, */
+        {
+          company: "Code Kingdoms",
+          name: "Code Kingdoms Editor",
+          description: "Code in JavaScript with the CK editor.",
+          id: 'codekingdoms',
+          origin: origin,
+          path: path + 'codekingdoms/editor.html'
+        }, {
         company: "Microsoft",
         name: "Block Editor",
         description: "Drag and drop",
