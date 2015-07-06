@@ -70,6 +70,10 @@ body, input {
 
 #script-icons {
   font-size: 1.5rem;
+  color: #fff;
+  position: absolute;
+  top: 4px;
+  right: 12px;
 }
 
 /* Popups */
@@ -123,7 +127,10 @@ body, input {
 
 
 #toolbox {
-  padding: .5em;
+  padding: 4px 4px 14px 4px;
+  /* padding-top: 2px; */
+  height: 60px;
+  background: #333;
 }
 
 #log {
@@ -163,9 +170,9 @@ body, input {
 }
 
 .roundsymbol {
-  width: 4rem;
-  height: 4rem;
-  border: 2px solid black;
+  width: 34px;
+  height: 52px;
+  border: 2px solid #fff;
   border-radius: 50%;
   margin: .2rem;
   margin-bottom: 0;
@@ -176,8 +183,16 @@ body, input {
   font-family: "Segoe UI Emoji", "Segoe UI Symbol", "Symbola", sans-serif;
 }
 
+.roundsymbol > .fa {
+  color: #fff;
+  font-size: 24px;
+  position: relative;
+  top: -19px;
+}
+
 .roundlabel {
-  padding-top: .6rem;
+  padding-top: 0px;
+  color: #fff;
   font-size: 80%;
   text-align: center;
 }

@@ -39,7 +39,8 @@ var generated = [
 // A list of targets we compile with the --noImplicitAny flag.
 var noImplicitAny = {
   "build/browser.d.ts": null,
-  "build/blockly-main.js": null
+  "build/blockly-main.js": null,
+  "build/codekingdoms-main.js": null
 };
 
 // On Windows, merely changing a file in the directory does *not* change that
@@ -243,6 +244,11 @@ mkSimpleTask('build/blockly-main.js', [
     "editor/messages.ts"
 ], "www/blockly/refs.ts");
 
+mkSimpleTask('build/codekingdoms-main.js', [
+    "www/codekingdoms/codekingdoms-main.ts",
+    "editor/messages.ts"
+], "www/codekingdoms/refs.ts");
+
 // Now come the rules for files that are obtained by concatenating multiple
 // _js_ files into another one. The sequence exactly reproduces what happened
 // previously, as there are ordering issues with initialization of global variables
@@ -382,6 +388,7 @@ task('default', [
   'build/officemix.d.ts',
   'build/ace-main.js',
   'build/blockly-main.js',
+  //'build/codekingdoms-main.js',
   'log'
 ].concat(Object.keys(concatMap)), {
   parallelLimit: branchingFactor,
