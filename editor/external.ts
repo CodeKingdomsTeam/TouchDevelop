@@ -38,8 +38,11 @@ module TDev {
           name: "Code Kingdoms Editor",
           description: "Code in JavaScript with the CK editor.",
           id: 'codekingdoms',
-          origin: origin,
-          path: path + 'codekingdoms/editor.html'
+          // TODO
+          // origin: origin,
+          // path: path + 'codekingdoms/editor.html'
+          origin: 'http://localhost:8888',
+          path: '/ck-client/game/'
         }, {
         company: "Microsoft",
         name: "Block Editor",
